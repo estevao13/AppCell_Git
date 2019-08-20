@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MasterDetailPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Page="clr-namespace:AppCell.Paginas"
+    x:Class="AppCell.Menu.Master">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu"
+                     HeightRequest="300">
+            <ScrollView>
+                <StackLayout BackgroundColor="Black" Spacing="0">
+                    <Label Text="Celulas"
+                           TextColor="White"
+                           Margin="0, 35, 0, 0"
+                           FontAttributes="Bold" />
+
+                    <Button Text="TextCell"
+                            Margin="0, 35, 0, 0"
+                            FontSize="24"
+                            TextColor="White"
+                            BackgroundColor="Transparent"
+                            Clicked="GoTextCell" />
+                    <Button Text="ImageCell"
+                            Margin="0, 35, 0, 0"
+                            FontSize="24"
+                            TextColor="White"
+                            BackgroundColor="Transparent"
+                            Clicked="GoImageCell" />
+                    <Button Text="EntryCell"
+                            Margin="0, 35, 0, 0"
+                            FontSize="24"
+                            TextColor="White"
+                            BackgroundColor="Transparent"
+                            Clicked="GoEntryCell" />
+                    <Button Text="SwitchCell"
+                            Margin="0, 35, 0, 0"
+                            FontSize="24"
+                            TextColor="White"
+                            BackgroundColor="Transparent"
+                            Clicked="GoSwitchCell" />
+                    <Button Text="ViewCell"
+                            Margin="0, 35, 0, 0"
+                            FontSize="24"
+                            TextColor="White"
+                            BackgroundColor="Transparent"
+                            Clicked="GoViewCell" />
+
+                    <Label Text="Componentes"
+                           TextColor="White"
+                           Margin="0, 35, 0, 0"
+                           FontAttributes="Bold" />
+
+                    <Button Text="ListView"
+                            Margin="0, 35, 0, 0"
+                            FontSize="24"
+                            TextColor="White"
+                            BackgroundColor="Transparent"
+                            Clicked="GoListView" />
+                    <Button Text="ListView Button"
+                            Margin="0, 35, 0, 0"
+                            FontSize="24"
+                            TextColor="White"
+                            BackgroundColor="Transparent"
+                            Clicked="GoListViewButton" />
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <Page:TextCellPage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
